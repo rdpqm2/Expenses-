@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		5A1CEB4D22AB214500CD1E37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1CEB4C22AB214500CD1E37 /* AppDelegate.swift */; };
-		5A1CEB4F22AB214500CD1E37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1CEB4E22AB214500CD1E37 /* ViewController.swift */; };
 		5A1CEB5222AB214500CD1E37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A1CEB5022AB214500CD1E37 /* Main.storyboard */; };
 		5A1CEB5522AB214500CD1E37 /* Expenses.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5A1CEB5322AB214500CD1E37 /* Expenses.xcdatamodeld */; };
 		5A1CEB5722AB214600CD1E37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A1CEB5622AB214600CD1E37 /* Assets.xcassets */; };
 		5A1CEB5A22AB214600CD1E37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A1CEB5822AB214600CD1E37 /* LaunchScreen.storyboard */; };
 		5A1CEB6522AB214600CD1E37 /* ExpensesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1CEB6422AB214600CD1E37 /* ExpensesUITests.swift */; };
+		5AE3FE2622AB2FE7004FC472 /* Expense Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE3FE2522AB2FE7004FC472 /* Expense Struct.swift */; };
+		5AE3FE2822AB317B004FC472 /* ExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE3FE2722AB317B004FC472 /* ExpensesViewController.swift */; };
+		5AE3FE2A22AB3C8E004FC472 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE3FE2922AB3C8E004FC472 /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +31,6 @@
 /* Begin PBXFileReference section */
 		5A1CEB4922AB214500CD1E37 /* Expenses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expenses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A1CEB4C22AB214500CD1E37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5A1CEB4E22AB214500CD1E37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5A1CEB5122AB214500CD1E37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A1CEB5422AB214500CD1E37 /* Expenses.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Expenses.xcdatamodel; sourceTree = "<group>"; };
 		5A1CEB5622AB214600CD1E37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +39,9 @@
 		5A1CEB6022AB214600CD1E37 /* ExpensesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpensesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A1CEB6422AB214600CD1E37 /* ExpensesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesUITests.swift; sourceTree = "<group>"; };
 		5A1CEB6622AB214600CD1E37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AE3FE2522AB2FE7004FC472 /* Expense Struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expense Struct.swift"; sourceTree = "<group>"; };
+		5AE3FE2722AB317B004FC472 /* ExpensesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesViewController.swift; sourceTree = "<group>"; };
+		5AE3FE2922AB3C8E004FC472 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +84,10 @@
 			isa = PBXGroup;
 			children = (
 				5A1CEB4C22AB214500CD1E37 /* AppDelegate.swift */,
-				5A1CEB4E22AB214500CD1E37 /* ViewController.swift */,
 				5A1CEB5022AB214500CD1E37 /* Main.storyboard */,
+				5AE3FE2722AB317B004FC472 /* ExpensesViewController.swift */,
+				5AE3FE2522AB2FE7004FC472 /* Expense Struct.swift */,
+				5AE3FE2922AB3C8E004FC472 /* CustomTableViewCell.swift */,
 				5A1CEB5622AB214600CD1E37 /* Assets.xcassets */,
 				5A1CEB5822AB214600CD1E37 /* LaunchScreen.storyboard */,
 				5A1CEB5B22AB214600CD1E37 /* Info.plist */,
@@ -200,7 +206,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A1CEB4F22AB214500CD1E37 /* ViewController.swift in Sources */,
+				5AE3FE2622AB2FE7004FC472 /* Expense Struct.swift in Sources */,
+				5AE3FE2A22AB3C8E004FC472 /* CustomTableViewCell.swift in Sources */,
+				5AE3FE2822AB317B004FC472 /* ExpensesViewController.swift in Sources */,
 				5A1CEB5522AB214500CD1E37 /* Expenses.xcdatamodeld in Sources */,
 				5A1CEB4D22AB214500CD1E37 /* AppDelegate.swift in Sources */,
 			);
